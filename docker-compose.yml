@@ -9,4 +9,5 @@ services:
       - ./html:/usr/local/apache2/htdocs
       - ./conf/httpd.conf:/usr/local/apache2/conf/httpd.conf
       - ./vhosts:/usr/local/apache2/conf/vhosts
+      - ./certs:/usr/local/apache/conf/certs
     restart: unless-stopped
